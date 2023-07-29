@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&family=Cabin+Sketch&family=Edu+SA+Beginner:wght@500&family=Sriracha&family=Teko:wght@300&display=swap');
+/* font-family: 'Averia Serif Libre', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Sriracha', cursive;
+font-family: 'Teko', sans-serif; */
+:root {
+    --main-color: rgb(255, 0, 0);
+    --second-color: rgb(6, 175, 6);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+header{    
+    background-color: rgb(255, 255, 255)55;  
+}
+nav {
+    display: flex;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.881);
+    width: 98vw;
+    margin: 0.5vw 1vw;
+    place-items: center;
+    border-radius: 10px;
+    border-color: var(--second-color);
+    border-width: 2px;
+    border-style: solid; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+.logo img {
+    width: 151px;
+    padding: 0 25px;
+}
+header nav ul {
+    display: flex;
+   
+    align-items: center;
+    height: 65px;
+    
+}
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a {
+    color: var(--main-color); 
+    text-decoration: none;
+    font-family: 'Edu SA Beginner', cursive;
+}
+nav ul li a:hover {
+    color: var(--second-color)
+   
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search input{
+    width: 25vw;
+    height: 35px;
+    border-radius: 20px 5px;
+    margin: 5px 16px 0 56px;
+    padding:2px 12px;
+    color: var(--second-color);
+    font-family: 'Edu SA Beginner', cursive;
+    border-color: var(--second-color);
+    outline: none;
+    
+    transition: all 0.5s linear;
+   
+}
+.search input:focus{
+
+}
+.searchBtn{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: var(--second-color);
+    position: absolute;
+    right: 2rem;
+    place-items: center;
+}
+.searchBtn:hover {
+    color: var(--main-color)
+}
+
+.container{
+    min-height: calc(100vh - 65px - 10vh );
+}
+.slider{
+    margin: 50px 10vw 20px 10vw;
+    width: 80vw;
+}
+.container {
+    padding-top: 65px;
+}
+footer {
+    background: var(--main-color); 
+    color: white;
+    height: 10vh;
+    width: auto;
+    font-family: 'Edu SA Beginner', cursive;
+}
