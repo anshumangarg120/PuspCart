@@ -31,7 +31,7 @@ nav {
 }
 .flower{	
 	width: 100px;
-	height: 270px;	
+	height: 267px;	
 	border-radius: 1rem;
 	margin: 0.5rem;
     border-width: 1px;
@@ -54,5 +54,20 @@ nav {
 	margin: 5px 0 5px 0;
 	font-size: 10px;
 }
-
+@keyframes slide1{
+    0%{ 
+     transform:none ;
+ }
+ 100%{
+     transform: none;
+ }
+ }
+ @keyframes slide2{
+     0%{ 
+      transform: none;
+  }
+  100%{
+      transform: none;
+  }
+  }
 }

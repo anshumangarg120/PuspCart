@@ -34,7 +34,8 @@ nav {
     border-radius: 10px;
     border-color: var(--second-color);
     border-width: 2px;
-    border-style: solid; 
+    border-style: solid;
+    z-index: 10;
 }
 
 .logo {
@@ -105,7 +106,25 @@ nav ul li a:hover {
 /* .container{
     min-height: calc(100vh - 65px - 10vh );
 } */
-.slider img{
+@keyframes slide1{
+   0%{ 
+    transform: translate(0vw);
+}
+100%{
+    transform: translate(85vw);
+}
+}
+@keyframes slide2{
+    0%{ 
+     transform: translate(0vw);
+ }
+ 100%{
+     transform: translate(-80.5vw);
+ }
+ }
+ 
+
+.slider {
     margin: 3vw 10vw 10vw 10vw;
     width: 80vw;
     height: 40vw;
@@ -113,7 +132,20 @@ nav ul li a:hover {
     border-style: solid;
     border-width: 5px;
     border-color: var(--second-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
 }
+.img1{
+    transform: translate(0vw); 
+    animation: slide1 1s 4s forwards;
+}
+.img2{
+    transform: translate(8vw); 
+    animation: slide2 1s 3s forwards;
+}
+
 .container {
     padding-top: 65px;
 }
@@ -132,8 +164,8 @@ nav ul li a:hover {
 .red{
     color: red;
 }
-.green{
-    color: rgb(34, 255, 0);
+.blue{
+    color: rgb(5, 125, 237);
 }
 .white{
     color: white;
@@ -153,7 +185,7 @@ nav ul li a:hover {
 	color: #21201e;
 	text-align: center;
 	width: 200px;
-	height: 339px;
+	height: 337px;
 	/* padding: 2rem; */
 	display: flex;
 	flex-direction: column;
