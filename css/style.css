@@ -83,10 +83,6 @@ nav ul li a:hover {
     border-color: var(--second-color);
     outline: none; 
 }
-
-.search input:focus{
-
-}
 .searchBtn{
     width: 30px;
     height: 30px;
