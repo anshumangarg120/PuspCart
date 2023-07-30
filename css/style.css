@@ -4,6 +4,7 @@ font-family: 'Cabin Sketch', cursive;
 font-family: 'Edu SA Beginner', cursive;
 font-family: 'Sriracha', cursive;
 font-family: 'Teko', sans-serif; */
+
 :root {
     --main-color: rgb(255, 0, 0);
     --second-color: rgb(6, 175, 6);
@@ -79,37 +80,138 @@ nav ul li a:hover {
     color: var(--second-color);
     font-family: 'Edu SA Beginner', cursive;
     border-color: var(--second-color);
-    outline: none;
-    
-    transition: all 0.5s linear;
-   
+    outline: none; 
 }
+
 .search input:focus{
 
 }
 .searchBtn{
     width: 30px;
     height: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     color: var(--second-color);
     position: absolute;
     right: 2rem;
     place-items: center;
 }
+/* .fas {
+    width: 10vw;
+} */
 .searchBtn:hover {
     color: var(--main-color)
 }
 
-.container{
+/* .container{
     min-height: calc(100vh - 65px - 10vh );
-}
-.slider{
-    margin: 50px 10vw 20px 10vw;
+} */
+.slider img{
+    margin: 3vw 10vw 10vw 10vw;
     width: 80vw;
+    height: 40vw;
+    border-radius: 80px 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--second-color);
 }
 .container {
     padding-top: 65px;
 }
+.cards{
+    margin-bottom: 50px;
+}
+.cards h2{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 8vw;
+    font-family: 'Cabin Sketch', cursive;   
+}
+.yellow{
+    color: rgb(255, 166, 0); 
+}
+.red{
+    color: red;
+}
+.green{
+    color: rgb(34, 255, 0);
+}
+.white{
+    color: white;
+}
+.pink{
+    color: rgb(255, 50, 84)
+}
+.all-flowers{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.flower{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 200px;
+	height: 339px;
+	/* padding: 2rem; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+    border-color: var(--main-color);
+    border-style: solid;
+    border-width: 1px;
+}
+.flower-name{
+    color: var(--main-color);
+    margin-bottom: 3px;
+    font-family: 'Sriracha', cursive;
+    font-size: 20px;
+}
+.flower-price{
+	font-size: 18px;
+    color: var(--second-color);
+}
+.flower:hover img{
+	scale:  1.1;
+}
+
+.flower:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.flower img {
+	/* height: 200px; */
+	margin-bottom: 1rem;
+	transition: all 0.3s;
+}
+.flower a:link, .flower a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: white;
+    color: var(--second-color);
+    font-family: 'Edu SA Beginner', cursive;
+    border-color: var(--second-color);
+    outline: none;
+	padding: 0.5rem 1rem;
+	border-radius: 20px 5px;
+	margin: 10px 0 10px 0;
+	font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+	transition: all 0.2s;
+    
+}
+
+.flower a:hover{
+	transform: scale(1.1);
+}
+
+
 footer {
     background: var(--main-color); 
     color: white;
