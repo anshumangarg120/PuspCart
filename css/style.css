@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&family=Cabin+Sketch&family=Edu+SA+Beginner:wght@500&family=Sriracha&family=Teko:wght@300&display=swap');
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&family=Cabin+Sketch&family=Edu+SA+Beginner:wght@500&family=Sriracha&family=Teko:wght@300&display=swap");
 /* font-family: 'Averia Serif Libre', cursive;
 font-family: 'Cabin Sketch', cursive;
 font-family: 'Edu SA Beginner', cursive;
@@ -6,244 +8,220 @@ font-family: 'Sriracha', cursive;
 font-family: 'Teko', sans-serif; */
 
 :root {
-    --main-color: rgb(255, 0, 0);
-    --second-color: rgb(6, 175, 6);
-  }
-
-*{
-    padding: 0;
-    margin: 0;
+  --main-color: rgb(255, 0, 0);
+  --second-color: rgb(6, 175, 6);
 }
 
-.flex-all-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+* {
+  padding: 0;
+  margin: 0;
 }
 
-header{    
-    background-color: rgb(255, 255, 255)55;  
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: rgb(255, 255, 255) 55;
 }
 nav {
-    display: flex;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.881);
-    width: 98vw;
-    margin: 0.5vw 1vw;
-    place-items: center;
-    border-radius: 10px;
-    border-color: var(--second-color);
-    border-width: 2px;
-    border-style: solid;
-    z-index: 10;
+  display: flex;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.881);
+  width: 98vw;
+  margin: 0.5vw 1vw;
+  place-items: center;
+  border-radius: 10px;
+  border-color: var(--second-color);
+  border-width: 2px;
+  border-style: solid;
+  z-index: 10;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 .logo img {
-    width: 151px;
-    padding: 0 25px;
+  width: 151px;
+  padding: 0 25px;
 }
 header nav ul {
-    display: flex;
-   
-    align-items: center;
-    height: 65px;
-    
+  display: flex;
+
+  align-items: center;
+  height: 65px;
 }
 nav ul li {
-    list-style: none;
-    padding: 0 23px;
+  list-style: none;
+  padding: 0 23px;
 }
 nav ul li a {
-    color: var(--main-color); 
-    text-decoration: none;
-    font-family: 'Edu SA Beginner', cursive;
+  color: var(--main-color);
+  text-decoration: none;
+  font-family: "Edu SA Beginner", cursive;
 }
 nav ul li a:hover {
-    color: var(--second-color)
-   
+  color: var(--second-color);
 }
-.search{
-    display: flex;
-    align-items: center;
-    position: relative;
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.search input{
-    width: 25vw;
-    height: 35px;
-    border-radius: 20px 5px;
-    margin: 5px 16px 0 56px;
-    padding:2px 12px;
-    color: var(--second-color);
-    font-family: 'Edu SA Beginner', cursive;
-    border-color: var(--second-color);
-    outline: none; 
+.search input {
+  width: 25vw;
+  height: 35px;
+  border-radius: 20px 5px;
+  margin: 5px 16px 0 56px;
+  padding: 2px 12px;
+  color: var(--second-color);
+  font-family: "Edu SA Beginner", cursive;
+  border-color: var(--second-color);
+  outline: none;
 }
-.searchBtn{
-    width: 30px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0);
-    color: var(--second-color);
-    position: absolute;
-    right: 2rem;
-    place-items: center;
+.searchBtn {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--second-color);
+  position: absolute;
+  right: 2rem;
+  place-items: center;
 }
-/* .fas {
-    width: 10vw;
-} */
+
 .searchBtn:hover {
-    color: var(--main-color)
+  color: var(--main-color);
 }
 
-/* .container{
-    min-height: calc(100vh - 65px - 10vh );
-} */
-/* @keyframes slide1{
-   0%{ 
-    transform: translate(0vw);
-}
-100%{
-    transform: translate(85vw);
-}
-}
-@keyframes slide2{
-    0%{ 
-     transform: translate(0vw);
- }
- 100%{
-     transform: translate(-80.5vw);
- }
- }
-  */
+.container {
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-.slider {
-    margin: 3vw 10vw 10vw 10vw;
+  .slider {
     width: 80vw;
     height: 40vw;
     border-radius: 80px 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--second-color);
+    border: 5px solid var(--second-color);
     overflow: hidden;
     display: flex;
     align-items: center;
-    
- }
-/* .img1{
-    transform: translate(0vw); 
-    animation: slide1 1s 4s forwards;
-}
-.img2{
-    transform: translate(8vw); 
-    animation: slide2 1s 3s forwards;
-} */
 
-.container {
-    padding-top: 65px;
+    .img1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
-.cards{
-    margin-bottom: 50px;
+
+.cards {
+  margin-bottom: 50px;
 }
-.cards h2{
-	text-align: center;
-	margin-bottom: 2rem;
-	font-size: 8vw;
-    font-family: 'Cabin Sketch', cursive;   
+.cards h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 8vw;
+  font-family: "Cabin Sketch", cursive;
 }
-.yellow{
-    color: rgb(255, 166, 0); 
+.yellow {
+  color: rgb(255, 166, 0);
 }
-.red{
-    color: red;
+.red {
+  color: red;
 }
-.blue{
-    color: rgb(5, 125, 237);
+.blue {
+  color: rgb(5, 125, 237);
 }
-.white{
-    color: white;
+.white {
+  color: white;
 }
-.pink{
-    color: rgb(255, 50, 84)
+.pink {
+  color: rgb(255, 50, 84);
 }
-.all-flowers{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+.all-flowers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.flower{
-	overflow: hidden;
-	background: #ffffff;
-	color: #21201e;
-	text-align: center;
-	width: 200px;
-	height: 337px;
-	/* padding: 2rem; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border-radius: 1.2rem;
-	margin: 2rem;
-    border-color: var(--main-color);
-    border-style: solid;
-    border-width: 1px;
+.flower {
+  overflow: hidden;
+  background: #ffffff;
+  color: #21201e;
+  text-align: center;
+  width: 200px;
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 2rem;
+  border-color: var(--main-color);
+  border-style: solid;
+  border-width: 1px;
+  img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
 }
-.flower-name{
-    color: var(--main-color);
-    margin-bottom: 3px;
-    font-family: 'Sriracha', cursive;
-    font-size: 20px;
+.flower-name {
+  color: var(--main-color);
+  margin-bottom: 3px;
+  font-family: "Sriracha", cursive;
+  font-size: 20px;
 }
-.flower-price{
-	font-size: 18px;
-    color: var(--second-color);
+.flower-price {
+  font-size: 18px;
+  color: var(--second-color);
 }
-.flower:hover img{
-	scale:  1.1;
+.flower:hover img {
+  scale: 1.1;
 }
 
 .flower:hover {
-	box-shadow: 5px 15px 25px #eeeeee;
+  box-shadow: 5px 15px 25px #eeeeee;
 }
 
 .flower img {
-	/* height: 200px; */
-	margin-bottom: 1rem;
-	transition: all 0.3s;
+  /* height: 200px; */
+  margin-bottom: 1rem;
+  transition: all 0.3s;
 }
-.flower a:link, .flower a:visited{
-	color: #ececec;
-	display: inline-block;
-	text-decoration: none;
-	background-color: white;
-    color: var(--second-color);
-    font-family: 'Edu SA Beginner', cursive;
-    border-color: var(--second-color);
-    outline: none;
-	padding: 0.5rem 1rem;
-	border-radius: 20px 5px;
-	margin: 10px 0 10px 0;
-	font-size: 20px;
-    border-style: solid;
-    border-width: 1px;
-	transition: all 0.2s;
-    
-}
-
-.flower a:hover{
-	transform: scale(1.1);
+.flower a:link,
+.flower a:visited {
+  color: #ececec;
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  color: var(--second-color);
+  font-family: "Edu SA Beginner", cursive;
+  border-color: var(--second-color);
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px 5px;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.2s;
 }
 
+.flower a:hover {
+  transform: scale(1.1);
+}
 
 footer {
-    background: var(--main-color); 
-    color: white;
-    height: 10vh;
-    width: auto;
-    font-family: 'Edu SA Beginner', cursive;
+  background: var(--main-color);
+  color: white;
+  height: 10vh;
+  width: auto;
+  font-family: "Edu SA Beginner", cursive;
 }
